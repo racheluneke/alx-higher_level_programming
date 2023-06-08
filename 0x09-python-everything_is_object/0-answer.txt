@@ -1,8 +1,1 @@
-#!/usr/bin/python3
-variable = 10
-
-# Get the variable identifier.
-identifier = id
-
-# Print the variable identifier.
-print(identifier(variable))
+type
