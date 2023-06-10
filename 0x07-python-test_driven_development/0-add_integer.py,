@@ -1,24 +1,30 @@
 i#!/usr/bin/python3
 """
-    add two numbers together
+
+This module is composed by a function that adds two numbers
+
 """
 
 
 def add_integer(a, b=98):
-    """Try to addd two numbers together
+    """ Function that adds two integer and/or float numbers
+
     Args:
-        a = first number and must be integer or float
-        b = second number with default value 98 and must be float or integer
-    raises:
-        raise a type error of any of the numbers is not a float or an integer
+        a: first number
+        b: second number
+
     Returns:
-        returns the addition of both numbers
+        The addition of the two given numbers
+
+    Raises:
+        TypeError: If a or b aren't integer and/or float numbers
+
     """
-    try:
-        if not isinstance(a, (int, float)):
-            raise TypeError("a must be an integer")
-        if not isinstance(b, (int, float)):
-            raise TypeError("b must be an integer")
-        return(int(a) + int(b))
-    except TypeError as e:
-        raise TypeError(e)
+
+    if not isinstance(a, int) and not isinstance(a, float):
+        raise TypeError("a must be an integer")
+    if not isinstance(b, int) and not isinstance(b, float):
+        raise TypeError("b must be an integer")
+    a = int(a)
+    b = int(b)
+    return (a + b)
