@@ -1,1 +1,1 @@
-readme on sql
+more queries on sql
